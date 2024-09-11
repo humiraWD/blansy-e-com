@@ -1,0 +1,22 @@
+/* 공통 */
+.brand_slide * { box-sizing: border-box; }
+:root {
+	--brand-bg_color: #f7f7f7; /* 100% 배경색 */
+	--brand-bg_height: 483px; /* 100% 배경 높이 (브랜드 이미지 높이에 따라 조정) */
+	--brand-title-height: 168px; /* 타이틀 영역 높이 */
+	--brand-width: 1050px; /* 슬라이드 넓이 */
+	--brand-margin-bottom: 70px; /* 슬라이드 하단 여백 */
+	--brand-arrow-top: 80px; /* 이전/다음 상단 위치 */
+	--brand-margin-line: 30px; /* 첫 라인 제외 상단 여백 */
+}
+.brand_full_bg { position: absolute; left: 0; width: 100%; height: var(--brand-bg_height); background-color: var(--brand-bg_color); z-index: -1; }
+.brand_slide { width: var(--brand-width); padding-bottom: var(--brand-margin-bottom); }
+.brand_title_area { text-align: center; position:relative; height: var(--brand-title-height); }
+.brand_title { position: absolute; left: 0; top: 0; width: 100%; height: 100%; text-align: center; }
+.brand_prev_area { position: absolute; left: 0; top: var(--brand-arrow-top); text-align: left; }
+.brand_next_area { position: absolute; right: 0; top: var(--brand-arrow-top); text-align: right; }
+.brand_prev_area:hover, .brand_next_area:hover { cursor: pointer; }
+.brand_next_area img { display: inline-block !important; }
+.brand_title_area .slick-arrow.slick-hidden { display: block !important; }
+.pb_boxes { display: flex; justify-content: space-between; }
+.brand_slide .pb_boxes:not(:first-child) { margin-top: var(--brand-margin-line); }

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Style for sidebar */
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .sidebar a:hover {
+      background-color: #e9ecef;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-3 sidebar">
+        <h4>Menu</h4>
+        <ul class="list-unstyled">
+          <li><a href="#profile">My Profile</a></li>
+          <li><a href="#wallet">Wallet</a></li>
+          <li><a href="#orders">Orders</a></li>
+        </ul>
+      </div>
+      <!-- Main content -->
+      <div class="col-9 offset-3">
+        <!-- Profile Section -->
+        <section id="profile">
+          <h2>My Profile</h2>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#personal-info">Personal Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#billing-info">Billing Address</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#delivery-info">Delivery Address</a>
+            </li>
+          </ul>
+          <!-- Your profile content goes here -->
+          <section id="personal-info" class="col-md-12 prof">
+            <h4>Personal Information</h4>
+            <hr>
+            <div class="card-body">
+              <div class="flex text-center">
+                  <img src="images/user.png" alt="user" class="img-fluid" style="border-radius: 50%; width: 100px; height: 100px;">
+              </div>
+              <h4 class="text-center">John Doe</h4>
+              <p><strong>Email:</strong>
+              </p>
+              <p><strong>Phone:</strong> 1234567890</p>
+              <p><strong>Address:</strong> 123 Main Street, Your City</p>
+              <p><strong>Country:</strong> Your Country</p>
+              <p><strong>Postal Code:</strong> 123456</p>
+              <p><strong>Joined On:</strong> 12-12-2020</p> 
+              <p><strong>Status:</strong> Active</p>
+
+
+              <!-- <a href="edit-profile.html" class="btn btn-primary">Edit Profile</a> -->
+            </div>
+          </section>
+          <section class="col-md-12 prof" id="billing-info" style="display: none;">
+            <h4>Biling Address Information</h4>
+            <hr>
+            <div class="card-body">
+              <p><strong>Address:</strong> 123 Main Street, Your City</p>
+              <p><strong>Country:</strong> Your Country</p>
+              <p><strong>Postal Code:</strong> 123456</p>
+
+              <!-- <a href="edit-profile.html" class="btn btn-primary">Edit Profile</a> -->
+
+          </div>
+          </section>
+          <section id="delivery-info" style="display: none;" class="prof">
+            <h4>Delivery Address Information</h4>
+            <hr>
+            <div class="card-body">
+              <p><strong>Address:</strong> 123 Main Street, Your City</p>
+              <p><strong>Country:</strong> Your Country</p>
+              <p><strong>Postal Code:</strong> 123456</p>
+
+              <!-- <a href="edit-profile.html" class="btn btn-primary">Edit Profile</a> -->
+
+          </div>
+          </section>
+
+
+
+        </section>
+        <!-- Wallet Section -->
+        <section id="wallet" style="display: none;">
+                    <div class="card" style="margin-top: 50px;">
+                      <div class="card-header">
+                        <h4>My Wallet</h4>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-wallet">Add to Wallet</button>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="card" style="background-color: #f8f9fa;">
+                              <div class="card-body">
+                                <h5>Wallet Balance</h5>
+                                <h1>$ 1000</h1>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card" style="background-color: #f8f9fa;">
+                              <div class="card-body">
+                                <h5>Wallet Balance</h5>
+                                <h1>$ 1000</h1>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card" style="background-color: #f8f9fa;">
+                              <div class="card-body">
+                                <h5>Wallet Balance</h5>
+                                <h1>$ 1000</h1>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" style="margin-top: 20px;">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-header">
+                                <h4>Wallet Transactions</h4>
+                              </div>
+                              <div class="card-body">
+                                <table class="table table-bordered">
+                                  <thead>
+                                    <tr>
+                                      <th>Transaction ID</th>
+                                      <th>Amount</th>
+                                      <th>Date</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>3</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>4</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>5</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>6</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>7</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>8</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>9</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                    <tr>
+                                      <td>10</td>
+                                      <td>$ 1000</td>
+                                      <td>12-12-2020</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            
+                      </div>
+                    </div>
+        </section>
+        <!-- Orders Section -->
+        <section id="orders" style="display: none;">
+          <!-- <h2>Recent Orders</h2> -->
+          
+          <div class="card mt-3">
+            <div class="card-header">
+                <h4>My Orders</h4>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Product 1</td>
+                            <td>2</td>
+                            <td>100</td>
+                            <td>200</td>
+                            <td>2021-01-01</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Product 2</td>
+                            <td>1</td>
+                            <td>200</td>
+                            <td>200</td>
+                            <td>2021-01-01</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Product 3</td>
+                            <td>3</td>
+                            <td>300</td>
+                            <td>900</td>
+                            <td>2021-01-01</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Product 4</td>
+                            <td>2</td>
+                            <td>400</td>
+                            <td>800</td>
+                            <td>2021-01-01</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Product 5</td>
+                            <td>1</td>
+                            <td>500</td>
+                            <td>500</td>
+                            <td>2021-01-01</td>
+                            <td>Delivered</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="add-to-wallet" tabindex="-1" role="dialog" aria-labelledby="add-to-wallet" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="add-to-wallet">Add to Wallet</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group
+          ">
+            <label for="card-number">Card Number</label>
+            <input type="text" class="form-control" id="card-number" placeholder="Enter Card Number">
+          </div>
+          <div class="form-group">
+            <label for="expiry-date">Expiry Date</label>
+            <input type="text" class="form-control" id="expiry-date" placeholder="Enter Expiry Date">
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="text" class="form-control" id="amount" placeholder="Enter Amount">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Money</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Show the content of clicked section and hide others
+      $(".sidebar a").click(function(){
+        var sectionId = $(this).attr('href');
+        $(".col-9 section").hide();
+        $(sectionId).show();
+        if(sectionId == "#profile"){
+          $("#personal-info").show();
+        }
+        return false;
+      });
+      $('#profile a').click(function (e) {
+        e.preventDefault()
+        $('.prof').hide();
+        $($(this).attr('href')).show();
+      });
+    });
+  </script>
+</body>
+</html>

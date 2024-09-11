@@ -1,0 +1,50 @@
+/* 베스트100 공통 */
+:root {
+	--best100-category-border-color: #b8b8b8; /* 카테고리 테두리 색상 */
+	--best100-product-image-size: 187px; /* 상품 이미지 사이즈 */
+}
+
+.best100_area { min-height: 1021px; }
+
+/* 베스트100 타이틀 */
+.best100_title *, .best100_cat * { box-sizing: border-box; font-family: notokr; }
+.best100_title { margin-top: 74px; }
+.best100_title .best100_title_1 { text-align:center; font-family:notokr_700; font-size:26pt; }
+.best100_title .best100_title_2 { text-align:center; font-family:notokr_500; font-size:13pt; color:#666; margin-top: 18px; margin-bottom: 23px; }
+
+/* 베스트100 카테고리 */
+.best100_cat { width: 100%; border-collapse: collapse; line-height: 50px; }
+.best100_cat .div_td { border-top: solid 1px var(--best100-category-border-color); border-bottom: solid 1px var(--best100-category-border-color); text-align: center; font-size: 15px; font-weight: bold; font-family: notokr_500; font-weight: 400; }
+.best100_cat .div_td:hover { cursor: pointer; }
+.best100_cat .div_td:nth-child(1) { width: 12%; border-left: solid 1px var(--best100-category-border-color); }
+.best100_cat .div_td:nth-child(2) { width: 18%; }
+.best100_cat .div_td:nth-child(3) { width: 12%; }
+.best100_cat .div_td:nth-child(4) { width: 14%; }
+.best100_cat .div_td:nth-child(5) { width: 12%; }
+.best100_cat .div_td:nth-child(6) { width: 18%; }
+.best100_cat .div_td:nth-child(7) { width: 14%; border-right: solid 1px var(--best100-category-border-color); }
+.best100_cat .div_td.active { background-color: #e83c58; color: #fff; border-color: #e83c58; }
+.best100_cat .div_td:not(.active):hover { background-color: rgb(232, 60, 88, .8); color: #fff; border-color: #e83c58; }
+
+/* 베스트100 목록 */
+.best100_tab_content { display: none; }
+
+.best100_tab * { box-sizing: border-box; font-family: notokr; }
+.best100_tab { margin-bottom: 50px; }
+.best100_tab .loading { text-align: center; }
+.best100_tab .loading img { width: 50px; margin-top: 50px; }
+.best100_tab .product_row { display: flex; justify-content: space-between; padding-top: 25px; }
+.best100_tab .product_row:not(:first-child) { margin-top: 25px; }
+.best100_tab .product { width: var(--best100-product-image-size); overflow: hidden; text-align: center; }
+.best100_tab .product_row:nth-child(n+2) {  border-top: solid 1px #d1d1d1; }
+.best100_tab .product:not(.nothing):hover { cursor: pointer; }
+
+.best100_tab .no { text-align: left; }
+.best100_tab .no span { display: inline-block; min-width: 17px; text-align: center; border-bottom: solid 1px #000; color: #000; font-size: 15px; font-weight: bold; letter-spacing: -1px; margin-bottom: 6px; }
+.best100_tab .img { margin-bottom: 20px; width: 100%; height: var(--best100-product-image-size); display: flex; align-items: center; justify-content: center; }
+.best100_tab .img img { width: 100%; height: auto; }
+.best100_tab .name { text-align: center; font-size: 14px; color: #666; font-family: notokr-demilight; font-weight: 400; line-height: 20px; height: 20px; overflow: hidden; }
+.best100_tab .price { text-align: center; font-size: 14px; font-weight: bold; color: #333; }
+
+/* 전체보기 */
+.best100_all { text-align: center; margin-top: 20px; margin-bottom: 70px; cursor:pointer; }

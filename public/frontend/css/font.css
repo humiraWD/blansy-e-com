@@ -1,0 +1,74 @@
+/* Noto Sans KR */
+@font-face {
+	font-family: 'notokr';
+	src: url('../font/noto-sans-kr-v25-latin_korean-regular.eot');
+	src: url('../font/noto-sans-kr-v25-latin_korean-regulard41d.eot?#iefix') format('embedded-opentype'),
+		url('../font/noto-sans-kr-v25-latin_korean-regular.woff2') format('woff2'),
+		url('../font/noto-sans-kr-v25-latin_korean-regular.woff') format('woff'),
+		url('../font/noto-sans-kr-v25-latin_korean-regular.svg#noto-sans-kr-v25-latin_korean-regular') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'notokr_500';
+	src: url('../font/noto-sans-kr-v26-latin_korean-500.eot');
+	src: url('../font/noto-sans-kr-v26-latin_korean-500d41d.eot?#iefix') format('embedded-opentype'),
+		url('../font/noto-sans-kr-v26-latin_korean-500.woff2') format('woff2'),
+		url('../font/noto-sans-kr-v26-latin_korean-500.woff') format('woff'),
+		url('../font/noto-sans-kr-v26-latin_korean-500.svg#noto-sans-kr-v26-latin_korean-500') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'notokr_700';
+	src: url('../font/noto-sans-kr-v26-latin_korean-700.eot');
+	src: url('../font/noto-sans-kr-v26-latin_korean-700d41d.eot?#iefix') format('embedded-opentype'),
+		url('../font/noto-sans-kr-v26-latin_korean-700.woff2') format('woff2'),
+		url('../font/noto-sans-kr-v26-latin_korean-700.woff') format('woff'),
+		url('../font/noto-sans-kr-v26-latin_korean-700.svg#noto-sans-kr-v26-latin_korean-700') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'notokr-demilight';
+	src: url('../font/notokr-demilight.eot');
+	src: url('../font/notokr-demilightd41d.eot?#iefix') format('embedded-opentype'),
+		url('../font/notokr-demilight.woff2') format('woff2'),
+		url('../font/notokr-demilight.woff') format('woff'),
+		url('../font/notokr-demilight.ttf') format('truetype'),
+		url('../font/notokr-demilight.svg#notokr-demilight') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* ³ª´® ¸íÁ¶ */
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('¡Ø'),
+        url('../font/NanumMyeongjoR.woff2') format('woff2'), 
+        url('../font/NanumMyeongjoR.woff') format('woff'),
+        url('../font/NanumMyeongjoR.ttf') format('truetype'),
+        url('../font/NanumMyeongjoR.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 700;
+    src: local('¡Ø'),
+        url('../font/NanumMyeongjoB.woff2') format('woff2'), 
+        url('../font/NanumMyeongjoB.woff') format('woff'),
+        url('../font/NanumMyeongjoB.ttf') format('truetype'),
+        url('../font/NanumMyeongjoB.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 900;
+    src: local('¡Ø'),
+        url('../font/NanumMyeongjoEB.woff2') format('woff2'), 
+        url('../font/NanumMyeongjoEB.woff') format('woff'),
+        url('../font/NanumMyeongjoEB.ttf') format('truetype'),
+        url('../font/NanumMyeongjoEB.eot') format('embedded-opentype');
+}

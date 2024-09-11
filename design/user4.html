@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Product</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+	
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="margin-top: 20px;">
+                    <div class="card-header">
+                        <h4>Profile</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Personal Information</h4>
+                                <hr>
+                                <div class="flex text-center">
+                                    <img src="images/user.png" alt="user" class="img-fluid" style="border-radius: 50%; width: 200px; height: 200px;">
+                                </div>
+                                <p><strong>Name:</strong> John Doe</p>
+                                <p><strong>Email:</strong>
+
+                                </p>
+                                <p><strong>Phone:</strong> 1234567890</p>
+                                <p><strong>Address:</strong> 123 Main Street, Your City</p>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="flex text-center">
+                                            <img src="images/user.png" alt="user" class="img-fluid" style="border-radius: 50%; width: 200px; height: 200px;">
+                                        </div>
+                                        <h4 class="pt-1">John Doe</h4>
+                                        <p>Email:
+        
+                                        </p>
+                                        <p>Phone:
+        
+                                        </p>
+                                        <p>Address:
+        
+                                        </p>
+                                        <a href="edit-profile.html" class="btn btn-primary">Edit Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Wallet</h4>
+                                <hr>
+                                <p><strong>Balance:</strong> $100</p>
+                                <a href="wallet.html" class="btn btn-primary">View Wallet Details</a>
+                                <hr>
+                                <h4>Latest Orders</h4>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Order #</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>$100</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>$200</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>$300</td>
+                                        <td>Processing</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>User Profile</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Profile</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="flex text-center">
+                                    <img src="images/user.png" alt="user" class="img-fluid" style="border-radius: 50%; width: 200px; height: 200px;">
+                                </div>
+                                <h4 class="pt-1">John Doe</h4>
+                                <p>Email:
+
+                                </p>
+                                <p>Phone:
+
+                                </p>
+                                <p>Address:
+
+                                </p>
+                                <a href="edit-profile.html" class="btn btn-primary">Edit Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>My Orders</h4>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Product</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th>Total</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Product 1</td>
+                                            <td>2</td>
+                                            <td>100</td>
+                                            <td>200</td>
+                                            <td>2021-01-01</td>
+                                            <td>Delivered</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Product 2</td>
+                                            <td>1</td>
+                                            <td>200</td>
+                                            <td>200</td>
+                                            <td>2021-01-01</td>
+                                            <td>Delivered</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Product 3</td>
+                                            <td>3</td>
+                                            <td>300</td>
+                                            <td>900</td>
+                                            <td>2021-01-01</td>
+                                            <td>Delivered</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Product 4</td>
+                                            <td>2</td>
+                                            <td>400</td>
+                                            <td>800</td>
+                                            <td>2021-01-01</td>
+                                            <td>Delivered</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Product 5</td>
+                                            <td>1</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>2021-01-01</td>
+                                            <td>Delivered</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+        
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/parallax100/parallax100.js"></script>
+	<script>
+        $('.parallax100').parallax100();
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+	<script>
+		$('.gallery-lb').each(function() { // the containers for all your galleries
+			$(this).magnificPopup({
+		        delegate: 'a', // the selector for gallery item
+		        type: 'image',
+		        gallery: {
+		        	enabled:true
+		        },
+		        mainClass: 'mfp-fade'
+		    });
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/sweetalert/sweetalert.min.js"></script>
+	<script>
+		$('.js-addwish-b2, .js-addwish-detail').on('click', function(e){
+			e.preventDefault();
+		});
+
+		$('.js-addwish-b2').each(function(){
+			var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+
+				$(this).addClass('js-addedwish-b2');
+				$(this).off('click');
+			});
+		});
+
+		$('.js-addwish-detail').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
+
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+
+				$(this).addClass('js-addedwish-detail');
+				$(this).off('click');
+			});
+		});
+
+		/*---------------------------------------------*/
+
+		$('.js-addcart-detail').each(function(){
+			var nameProduct = $(this).parent().parent().parent().parent().parent().find('.js-name-detail').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to cart !", "success");
+			});
+		});
+	
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			$(this).css('position','relative');
+			$(this).css('overflow','hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

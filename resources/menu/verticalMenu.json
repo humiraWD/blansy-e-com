@@ -1,0 +1,23 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard"
+    },
+    {
+      "name": "Manage Products",
+      "icon": "menu-icon tf-icons bx bx-lock-open-alt",
+      "slug": "auth",
+      "submenu": [
+        {
+          "url": "/units",
+          "name": "Unit",
+          "slug": "units",
+          "target": "_self"
+        }
+      ]
+    }
+  ]
+}

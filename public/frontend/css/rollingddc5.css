@@ -1,0 +1,36 @@
+/* 내용 변경 시 화면 구성 - css 파일에 시간값 변경 ?v=... */
+
+/* 롤링 공통 */
+.main_roll_area * { font-family: notokr; box-sizing: border-box; }
+
+/* 슬라이드 영역 - 고정 넓이x높이, 하단 여백 */
+.main_roll_area { width: 1050px; height: 232px !important; position: relative; margin-bottom: 0; overflow: hidden; }
+
+/* 타이틀 영역 */
+.main_roll_title_area { display: flex; align-items: center; justify-content: center; padding-left: 30px; padding-right: 30px; border-bottom: solid 1px #dcdcdc; height: 74px; margin-bottom: 22px; }
+.main_roll_title_area > div { width: 33.33%; font-size: 30px; font-weight: bold; color: #bbb; letter-spacing: -1px; text-align: center; }
+.main_roll_title_area > div:not(:first-child) { border-left: solid 1px #ddd; }
+.main_roll_title_area > div:hover { cursor: pointer; }
+.main_roll_title_area .active { color: #000; }
+
+/* 이미지/설명 영역 */
+.main_roll_container { display: flex; justify-content: space-between; }
+.main_roll_container .main_roll_outbox { text-align: center; font-size: 17px; width: 126px; overflow: hidden; white-space: nowrap; letter-spacing: -1px; color: #111; } /* 넓이 = 1050px / 항목수 */
+.main_roll_container .main_roll_inbox { width: 95px; height: 95px; margin: 0 auto; border-radius: 40%; position: relative; background-repeat: no-repeat; background-position: center center; background-size: fixed; } /* 이미지 영역 */
+/* 중앙 배치 */
+/*
+.main_roll_container .main_roll_inbox img { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+*/
+.main_roll_container .main_roll_outbox span { display: block; margin-top: 20px; } /* 하단 텍스트 */
+.main_roll_container .main_roll_outbox:hover { cursor: pointer; color: #000; }
+.main_roll_container.main_roll_group1 .main_roll_inbox { background-color: #f4f4f4; } /* 기본 색상 */
+.main_roll_container.main_roll_group1 .main_roll_outbox:hover .main_roll_inbox { background-color: #fbc955; } /* 마우스 오버 시 색상 */
+.main_roll_container.main_roll_group2 .main_roll_inbox { background-color: #ffe2e2; }
+.main_roll_container.main_roll_group2 .main_roll_outbox:hover .main_roll_inbox { background-color: #ffadad; }
+.main_roll_container.main_roll_group3 .main_roll_inbox { background-color: #e2f4d0; }
+.main_roll_container.main_roll_group3 .main_roll_outbox:hover .main_roll_inbox { background-color: #b6e67e; }
+
+/* 이전/다음 버튼 */
+.main_roll_prev_area { position: absolute; left: 0; top: 20px; text-align: left; }
+.main_roll_next_area { position: absolute; right: 0; top: 20px; text-align: right; }
+.main_roll_prev_area:hover, .main_roll_next_area:hover { cursor: pointer; }
